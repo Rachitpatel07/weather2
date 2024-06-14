@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><u><b>Weather App</b></u></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+                <form class="d-flex" role="search">
+
+                    <input class="form-control me-2" type="text" id="rachit" placeholder="Enter city name">
+                    <button class="btn btn-outline-success" type="button" onclick="myfun()">search</button>
+                    
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <h2 class="my-4 text-center"> <div id="cha"></h2>
+    <br>
+    <br>
+    
+
+    <div class="container"></div>
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-8 shadow-sm border-primary">
+                    <div class="card-header py-3 border-primary">
+                        <h4 class="my-0 fw-normal">Temperature</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <!-- <img id="weathericon" src="" alt=""> -->
+                            <img id="weatherIcon1" src="humidity.png" alt="" height="70px" width="70px">
+
+
+                            <li>Temperature is</li><span id="temp"></span>
+                            <li>Min Temperature is</li><span id="min_temp"></span>
+                            <li>Max Temperature is</li><span id="temp_max"></span>
+                            <li style=" visibility: hidden;">Max Temperature is</li><span id="temp_max"></span>
+                            <li style=" visibility: hidden;">Max Temperature is</li><span id="temp_max"></span>
+
+
+                        </ul>
+                        <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 border-primary">
+                        <h4 class="my-0 fw-normal">Humidity info</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <ul class="list-unstyled mt-3 mb-4">
+
+                            <img id="weatherIcon2" src="sun.jpg" alt="" height="70px" width="70px">
+
+                            <li>Sunrise is</li><span id="Sunrise"></span>
+                            <li>Sunset is</li><span id="Sunset"></span>
+                            <li>Wind Speed</li><span id="speed"></span>
+                            <li>Wind Direction</li><span id="deg"></span>
+                            <li style=" visibility: hidden;">Max Temperature is</li><span id="temp_max"></span>
+
+                        </ul>
+                        <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3  border-primary">
+                        <h4 class="my-0 fw-normal">Wind info</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <img id="weatherIcon3" src="speed.png" alt="" height="70px" width="70px">
+
+                            <li>Feels Like is</li><span id="feels_like"></span>
+                            <li>Clouds</li><span id="clouds"></span>
+                            <li>Pressure</li><span id="pressure"></span>
+                            <li>Humidity</li><span id="humidity"></span>
+                            <li style=" visibility: hidden;">Max Temperature is</li><span id="temp_max"></span>
+
+                        </ul>
+                        <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
